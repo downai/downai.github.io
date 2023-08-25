@@ -651,6 +651,8 @@
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    margin: 0 auto;
 }
 .close{
     float: right;
@@ -662,13 +664,20 @@
     cursor: pointer;
 }
 .card{
-    width: 600px;
-    height: 420px;
+    width: 350px;
+    height: 400px;
     padding: 20px;
     background-color: #FCFCFC;
     border-radius: 12px;
     margin: 10% auto 0 auto;
     z-index: 1000;
+    /* 剧中 */
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
 }
 .cardText{
     display: flex;
@@ -680,7 +689,6 @@
     display: none;
 }
 .line2{
-    width: 521px;
     height: 1px;
     background-color: #F1F1F1;
     margin: 41px auto 35px auto;
@@ -699,21 +707,25 @@
     margin: 0 auto;
 }
 .cardLink>*{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 300px;
+    height: 110px;
     border: 1px solid #979797;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 25px;
+
 }
 .card_title{
     font-size: 26px;
     color: #333333;
     letter-spacing: 0;
     text-align: center;
-    margin-top: 20px;
 }
 .card_title2{
     font-size: 26px;
