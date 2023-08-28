@@ -80,7 +80,7 @@ $('.dczt_btn_right,.dczt_btn_left').on('click', function () {
     };
 })
 $('.bof,.hd_watch').on('click', function () {
-    window.location.href = "http://gpt1.v2.ikmai.cn";
+    window.location.href = "http://ai.itigpt.cn";
     // $('#jjqd').show();
     $('.video>video').attr('src', '');
     // $('.video>video').attr('autoplay','autoplay');
@@ -141,12 +141,17 @@ $('.download').on('click', function () {
             downloadUrl = downAppData.Win.url;
         }
     } else if (isIos) {
-        if (downAppData.Ios.url == "" || downAppData.Ios.url == null || downAppData.Ios.url == undefined) {
-            $('#alert').css('display', 'block');
-            return;
-        } else {
+        if (navigator.userAgent.indexOf('Safari') > -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+            if (downAppData.Ios.url == "" || downAppData.Ios.url == null || downAppData.Ios.url == undefined) {
+                $('#alert').css('display', 'block');
+                return;
+            }
             downloadUrl = downAppData.Ios.url;
+            return;
         }
+        $('#jumpAlert').css('display', 'block');
+        return;
+
     } else if (isAndroid) {
         if (downAppData.Android.url == "" || downAppData.Android.url == null || downAppData.Android.url == undefined) {
             $('#alert').css('display', 'block');
