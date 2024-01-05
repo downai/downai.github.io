@@ -1,12 +1,12 @@
 {
     "Android":{
-        "url":"https://osss.suolj.com/ikmai/downApp/%E7%9F%A5%E8%AF%86%E9%80%9AAI.apk"
+        "url":"https://oss.suolj.com/ikmai/downApp/apk.apk"
     },
     "Ios":{
-        "url":"https://osss.suolj.com/ikmai/downApp/%E7%9F%A5%E8%AF%86%E9%80%9AAI.mobileconfig"
+        "url":"https://oss.suolj.com/ikmai/downApp/ios.mobileconfig"
     },
     "Win":{
-        "url":"https://osss.suolj.com/ikmai/downApp/%E7%9F%A5%E8%AF%86%E9%80%9AAI.exe"
+        "url":"https://oss.suolj.com/ikmai/downApp/exe.exe"
     },
     "Mac":{
         "url":""
