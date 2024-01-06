@@ -14,9 +14,18 @@
     <link rel="shortcut icon" href="/static/image/favicon.ico" type="image/x-icon" />
     <link rel="bookmark" href="/static/image/favicon.ico" type="image/x-icon" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/devtools-detector.min.js"></script>
 </head>
 
 <body>
+    <script>
+        ; (function () {
+            window.devtoolsDetector.addListener(function (isOpen) {
+                if (isOpen) window.location.href = 'about:blank'
+            })
+            window.devtoolsDetector.launch()
+        })()
+    </script>
     <div class="header">
         <div class="container">
             <div class="log">
@@ -41,7 +50,7 @@
             <a class="hd_down hd_com download"><img src="/static/image/apple.svg" id="dow_icon"
                     alt="" /><span>下载应用</span></a>
             <a class="hd_watch hd_com">
-                <!-- <img src="./static/image/dczt_info_img1.png" alt="" /> -->
+                <!-- <img src="./static/image/watch_big.svg" alt="" /> -->
                 <span>在线访问</span>
             </a>
         </div>
@@ -312,12 +321,12 @@
     </div>
     <div id="jumpAlert" style="display: none;">
         <div class="intro_weChatTip" id="browserTip">
-			<div class="intro_weChatTip_cnt">
-				点击右上角<br />
-				选择“在 Safari 中打开”
-			</div>
-		</div>
-        
+            <div class="intro_weChatTip_cnt">
+                点击右上角<br />
+                选择“在 Safari 中打开”
+            </div>
+        </div>
+
     </div>
     <div id="jjqd">
         <div class="video">

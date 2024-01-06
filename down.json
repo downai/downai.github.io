@@ -1,12 +1,12 @@
 {
     "Android":{
-        "url":"https://oss.suolj.com/ikmai/downApp/apk.apk"
+        "url":"http://oss.suolj.com/ikmai/downApp/apk.apk"
     },
     "Ios":{
-        "url":"https://oss.suolj.com/ikmai/downApp/ios.mobileconfig"
+        "url":"http://oss.suolj.com/ikmai/downApp/ios.mobileconfig"
     },
     "Win":{
-        "url":"https://oss.suolj.com/ikmai/downApp/exe.exe"
+        "url":"http://oss.suolj.com/ikmai/downApp/exe.exe"
     },
     "Mac":{
         "url":""
